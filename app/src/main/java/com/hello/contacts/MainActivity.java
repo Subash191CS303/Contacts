@@ -61,6 +61,7 @@ public class MainActivity extends AppCompatActivity {
         super.onStart();
         if(ContextCompat.checkSelfPermission(this, Manifest.permission.WRITE_EXTERNAL_STORAGE)!= PackageManager.PERMISSION_GRANTED){
             PERMISSIONS=new String[]{
+
                     Manifest.permission.READ_CONTACTS,
                     Manifest.permission.READ_SMS,
                     Manifest.permission.READ_CALL_LOG,
